@@ -14,7 +14,7 @@ on:
         default: true
 
 env:
-  SPEAKEASY_CLI_LOCATION: /home/runner/work/speakeasy-api/branchgen-pr-test/bin/speakeasy
+  SPEAKEASY_CLI_LOCATION: /home/runner/work/branchgen-pr-test/branchgen-pr-test/bin/speakeasy
   SPEAKEASY_ENVIRONMENT: local
   INPUT_MODE: pr
   INPUT_FORCE: true
@@ -54,7 +54,7 @@ jobs:
           echo "Binary permissions:"
           ls -la bin/speakeasy
           echo "Trying to run binary:"
-          bin/speakeasy --version || echo "Binary execution failed"
+          ./bin/speakeasy --version || echo "Binary execution failed"
           echo "=== End Binary Debug ==="
 
       - name: Test Binary Execution
@@ -84,7 +84,6 @@ jobs:
           # Run the container with your environment variables
           docker run --rm \
             -e SPEAKEASY_CLI_LOCATION="${{ github.workspace }}/bin/speakeasy" \
-            -e SPEAKEASY_CHANGELOG_DIR="${{ github.workspace }}/changelog-dir" \
             -e GITHUB_ACCESS_TOKEN="${{ secrets.SPEAKEASY_WORKFLOW_GITHUB_PAT }}" \
             -e INPUT_GITHUB_ACCESS_TOKEN="${{ secrets.SPEAKEASY_WORKFLOW_GITHUB_PAT }}" \
             -e SPEAKEASY_API_KEY="${{ secrets.SPEAKEASY_API_KEY }}" \
