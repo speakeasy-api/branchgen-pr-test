@@ -54,7 +54,7 @@ jobs:
           echo "Binary permissions:"
           ls -la bin/speakeasy
           echo "File contents: "
-          head -n 10 bin/speakeasy || echo "Failed to read binary contents"
+          head -n 10 ./bin/speakeasy || echo "Failed to read binary contents"
           echo "Trying to run binary:"
           bin/speakeasy --version || echo "Binary execution failed"
           echo "=== End Binary Debug ==="
