@@ -32,7 +32,7 @@ jobs:
           mkdir -p bin
           echo "current working directory - $(pwd)"
           echo "Downloading speakeasy binary to: $(pwd)/bin/speakeasy"
-          curl -L -o bin/speakeasy https://github.com/speakeasy-api/changelog-test-repo/releases/download/v5.0.0/speakeasy
+          curl -L -o bin/speakeasy https://github.com/speakeasy-api/branchgen-pr-test/releases/download/v5.0.0/speakeasy
           chmod +x bin/speakeasy
           echo "github workspace - ${{ github.workspace }}"
           echo "current working directory - $(pwd)"
@@ -54,7 +54,7 @@ jobs:
           echo "Binary permissions:"
           ls -la bin/speakeasy
           echo "File contents: "
-          head -n 10 ./bin/speakeasy || echo "Failed to read binary contents"
+          head -n 10 ./bin/speakeasy
           echo "Trying to run binary:"
           bin/speakeasy --version || echo "Binary execution failed"
           echo "=== End Binary Debug ==="
