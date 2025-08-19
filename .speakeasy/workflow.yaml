@@ -10,3 +10,9 @@ targets:
     overlay-example:
         target: ruby
         source: openapi
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/openapi-ruby-code-samples
+            labelOverride:
+                fixedValue: Ruby (SDK)
+            blocking: false

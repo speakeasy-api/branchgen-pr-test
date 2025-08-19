@@ -5,6 +5,7 @@ generation:
   usageSnippets:
     optionalPropertyRendering: withExample
     sdkInitStyle: constructor
+  useClassNamesForArrayFields: true
   fixes:
     nameResolutionDec2023: true
     nameResolutionFeb2025: true
@@ -28,6 +29,10 @@ ruby:
     runtime: {}
   author: Speakeasy
   baseErrorName: SDKError
+  branchedGeneration:
+    branchName: speakeasy/main
+    enabled: true
+    generationDirectory: /tmp/speakeasy-generation
   clientServerStatusCodesAsErrors: true
   constFieldsAlwaysOptional: false
   defaultErrorName: APIError
@@ -47,7 +52,3 @@ ruby:
   outputModelSuffix: output
   packageName: openapi
   typingStrategy: sorbet
-  branchedGeneration:
-    enabled: true
-    branchName: speakeasy/main
-    generationDirectory: /tmp/speakeasy-generation

@@ -1,0 +1,24 @@
+speakeasyVersion: 1.606.0
+sources: {}
+targets:
+    overlay-example:
+        source: openapi
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        openapi:
+            inputs:
+                - location: openapi.yaml
+            registry:
+                location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/openapi
+    targets:
+        overlay-example:
+            target: ruby
+            source: openapi
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/openapi-ruby-code-samples
+                labelOverride:
+                    fixedValue: Ruby (SDK)
+                blocking: false
