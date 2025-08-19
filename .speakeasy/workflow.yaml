@@ -4,9 +4,6 @@ sources:
     openapi:
         inputs:
             - location: openapi.yaml
-        overlays:
-            - location: overlay.yaml
-        output: combined-spec.yaml
         registry:
             location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/openapi
 targets:
