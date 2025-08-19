@@ -8,5 +8,5 @@ sources:
             location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/openapi
 targets:
     overlay-example:
-        target: typescript
+        target: ruby
         source: openapi
