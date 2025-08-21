@@ -18,7 +18,7 @@ env:
   SPEAKEASY_ENVIRONMENT: local
   INPUT_MODE: pr
   INPUT_FORCE: true
-  SPEAKEASY_API_KEY: {{secrets.SPEAKEASY_API_KEY}}
+  SPEAKEASY_API_KEY: ${{secrets.SPEAKEASY_API_KEY}}
 
 jobs:
   generate:
