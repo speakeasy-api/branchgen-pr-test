@@ -89,6 +89,7 @@ jobs:
             -e SPEAKEASY_CLI_LOCATION="${{ github.workspace }}/bin/speakeasy" \
             -e GITHUB_ACCESS_TOKEN="${{ secrets.SPEAKEASY_WORKFLOW_GITHUB_PAT }}" \
             -e INPUT_GITHUB_ACCESS_TOKEN="${{ secrets.SPEAKEASY_WORKFLOW_GITHUB_PAT }}" \
+            -e GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}" \
             -e SPEAKEASY_API_KEY="${{ secrets.SPEAKEASY_API_KEY }}" \
             -e GITHUB_SERVER_URL=https://github.com \
             -e GITHUB_REPOSITORY="${{ github.repository }}" \
