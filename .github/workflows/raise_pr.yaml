@@ -47,7 +47,7 @@ jobs:
 
       - name: Debug Binary Architecture
         env:
-          github_access_token,: ${{ secrets.SPEAKEASY_WORKFLOW_GITHUB_PAT }}
+          INPUT_GITHUB_ACCESS_TOKEN: ${{ secrets.SPEAKEASY_WORKFLOW_GITHUB_PAT }}
         run: |
           echo "=== Binary Architecture Debug ==="
           echo "System architecture: $(uname -m)"
@@ -63,8 +63,8 @@ jobs:
           echo "=== End Binary Debug ==="
 
       - name: Test Binary Execution
-        with:
-          github_access_token: ${{ secrets.SPEAKEASY_WORKFLOW_GITHUB_PAT }}
+        env:
+          INPUT_GITHUB_ACCESS_TOKEN: ${{ secrets.SPEAKEASY_WORKFLOW_GITHUB_PAT }}
         run: |
           echo "Testing if binary can execute..."
           if ${{ github.workspace }}/bin/speakeasy --version; then
