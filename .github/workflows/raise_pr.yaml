@@ -56,8 +56,6 @@ jobs:
           file bin/speakeasy
           echo "Binary permissions:"
           ls -la bin/speakeasy
-          echo "File contents: "
-          head -n 10 ./bin/speakeasy
           echo "Trying to run binary:"
           bin/speakeasy --version || echo "Binary execution failed"
           echo "=== End Binary Debug ==="
@@ -105,6 +103,7 @@ jobs:
             -e SPEAKEASY_ENVIRONMENT=local \
             -e INPUT_MODE=pr \
             -e INPUT_FORCE=true \
+            -e INPUT_DEBUG=true \
             -e TARGET=overlay-example \
             -e GITHUB_RUN_ID="${{ github.run_id }}" \
             -e GITHUB_RUN_ATTEMPT="${{ github.run_attempt }}" \
