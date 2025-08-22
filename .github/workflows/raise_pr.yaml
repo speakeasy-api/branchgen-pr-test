@@ -46,6 +46,8 @@ jobs:
           echo "SPEAKEASY_CLI_LOCATION=${{ github.workspace }}/bin/speakeasy" >> $GITHUB_ENV
 
       - name: Debug Binary Architecture
+        env:
+          GITHUB_TOKEN: ${{ secrets.SPEAKEASY_WORKFLOW_GITHUB_PAT }}
         run: |
           echo "=== Binary Architecture Debug ==="
           echo "System architecture: $(uname -m)"
@@ -61,6 +63,8 @@ jobs:
           echo "=== End Binary Debug ==="
 
       - name: Test Binary Execution
+        env:
+          GITHUB_TOKEN: ${{ secrets.SPEAKEASY_WORKFLOW_GITHUB_PAT }}
         run: |
           echo "Testing if binary can execute..."
           if ${{ github.workspace }}/bin/speakeasy --version; then
