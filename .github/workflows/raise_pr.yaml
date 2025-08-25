@@ -85,7 +85,20 @@ jobs:
           
           # Build the Docker image
           docker build -t custom-sdk-action .
-          
+
+      - name: Debug Docker Container
+        run: |
+          echo "=== Debugging Docker Container ==="
+          # Check what's in /usr/bin/git in a fresh container
+          docker run --rm custom-sdk-action sh -c "ls -la /usr/bin/git && /usr/bin/git --version"
+
+          # Check if mounting the workspace changes anything
+          docker run --rm -v "${{ github.workspace }}:${{ github.workspace }}" custom-sdk-action sh -c "ls -la /usr/bin/git && /usr/bin/git --version"
+
+          echo "=== End Docker Debug ==="
+
+      - name: Run docker container
+        run: | 
           # Run the container with your environment variables
           docker run --rm \
             -e SPEAKEASY_CLI_LOCATION="${{ github.workspace }}/bin/speakeasy" \
