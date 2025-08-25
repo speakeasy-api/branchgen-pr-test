@@ -1,8 +1,20 @@
-speakeasyVersion: 1.606.0
-sources: {}
+speakeasyVersion: 1.606.5
+sources:
+    openapi:
+        sourceNamespace: openapi
+        sourceRevisionDigest: sha256:103c3dbadeca6824ed5dedea67b9bd768b9bde663aba7a120ff7b057a43d04ce
+        sourceBlobDigest: sha256:90710a936023970e84e5c392eb24e1a076fda4615e4920970981c8c36a630121
+        tags:
+            - latest
+            - 1.0.0
 targets:
     overlay-example:
         source: openapi
+        sourceNamespace: openapi
+        sourceRevisionDigest: sha256:103c3dbadeca6824ed5dedea67b9bd768b9bde663aba7a120ff7b057a43d04ce
+        sourceBlobDigest: sha256:90710a936023970e84e5c392eb24e1a076fda4615e4920970981c8c36a630121
+        codeSamplesNamespace: openapi-ruby-code-samples
+        codeSamplesRevisionDigest: sha256:dc4d5e4499c44a9839ce074a64c28dbfa60b93695d947be53bced97cacd2d385
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
