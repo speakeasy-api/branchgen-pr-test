@@ -7,6 +7,8 @@ management:
   generationVersion: 2.686.7
   releaseVersion: 0.0.1
   configChecksum: fde38997fba001ad1e1cc67d15af69cb
+  repoURL: https://github.com/speakeasy-api/branchgen-pr-test.git
+  installationURL: https://github.com/speakeasy-api/branchgen-pr-test
 features:
   ruby:
     constsAndDefaults: 0.1.1
