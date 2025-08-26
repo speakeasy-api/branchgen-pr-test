@@ -3,6 +3,7 @@ id: 5ccdd126-d257-47ec-a086-dcb251d91d76
 management:
   docChecksum: 466aeb8d5d7370f961415ada5875ca8d
   docVersion: 1.0.0
+  speakeasyVersion: 0.0.1
   generationVersion: 2.686.7
   releaseVersion: 0.0.1
   configChecksum: fde38997fba001ad1e1cc67d15af69cb
