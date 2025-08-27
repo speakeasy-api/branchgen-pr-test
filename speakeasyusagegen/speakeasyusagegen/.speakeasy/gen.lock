@@ -1,0 +1,174 @@
+lockVersion: 2.0.0
+id: 9d1a7462-5f60-49cb-94ac-0dcdfef35035
+management:
+  docChecksum: 466aeb8d5d7370f961415ada5875ca8d
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.674.1
+  releaseVersion: 0.0.2
+  configChecksum: ac52439c393298a5efd2da25ab4e9524
+features:
+  ruby:
+    constsAndDefaults: 0.1.1
+    core: 3.10.0
+    deprecations: 2.81.2
+    flattening: 2.81.1
+    globalSecurity: 2.81.8
+    globalServerURLs: 2.82.4
+    inputOutputModels: 2.83.0
+    methodSecurity: 2.82.2
+    responseFormat: 0.1.0
+generatedFiles:
+  - addPet.usage.rb
+  - addPet_raw.usage.rb
+  - createUser.usage.rb
+  - createUsersWithArrayInput.usage.rb
+  - createUsersWithListInput.usage.rb
+  - deleteOrder.usage.rb
+  - deletePet.usage.rb
+  - deleteUser.usage.rb
+  - findPetsByStatus.usage.rb
+  - getInventory.usage.rb
+  - getOrderById.usage.rb
+  - getPetById.usage.rb
+  - getUserByName.usage.rb
+  - loginUser.usage.rb
+  - logoutUser.usage.rb
+  - placeOrder.usage.rb
+  - updatePet.usage.rb
+  - updatePetWithForm.usage.rb
+  - updatePet_raw.usage.rb
+  - updateUser.usage.rb
+  - uploadFile.usage.rb
+examples:
+  addPet:
+    speakeasy-default-add-pet:
+      requestBody:
+        application/json: {"name": "doggie", "photoUrls": ["https://example.com/photo.png"]}
+    speakeasy-default-add-pet-raw:
+      requestBody:
+        application/xml: "0xE8DAbC9D9F"
+  updatePet:
+    speakeasy-default-update-pet:
+      requestBody:
+        application/json: {"name": "doggie", "photoUrls": ["https://example.com/photo.png"]}
+    speakeasy-default-update-pet-raw:
+      requestBody:
+        application/xml: "0x8359625Dfb"
+  findPetsByStatus:
+    speakeasy-default-find-pets-by-status:
+      parameters:
+        query:
+          status: ["available"]
+      responses:
+        "200":
+          application/xml: "0x3DA625dd77"
+          application/json: [{"id": 25, "name": "doggie", "photoUrls": ["https://example.com/photo.png"]}]
+  findPetsByTags:
+    speakeasy-default-find-pets-by-tags:
+      parameters:
+        query:
+          tags: []
+      responses:
+        "200":
+          application/xml: "0xc8a2c95b0C"
+          application/json: [{"id": 25, "name": "doggie", "photoUrls": ["https://example.com/photo.png"]}]
+  getPetById:
+    speakeasy-default-get-pet-by-id:
+      parameters:
+        path:
+          petId: 311674
+      responses:
+        "200":
+          application/xml: "0x8A56e4AaE8"
+          application/json: {"id": 25, "name": "doggie", "photoUrls": ["https://example.com/photo.png"]}
+  updatePetWithForm:
+    speakeasy-default-update-pet-with-form:
+      parameters:
+        path:
+          petId: 509712
+  deletePet:
+    speakeasy-default-delete-pet:
+      parameters:
+        path:
+          petId: 818965
+  uploadFile:
+    speakeasy-default-upload-file:
+      parameters:
+        path:
+          petId: 150516
+      responses:
+        "200":
+          application/json: {}
+  getInventory:
+    speakeasy-default-get-inventory:
+      responses:
+        "200":
+          application/json: {"key": 111959, "key1": 333452, "key2": 973245}
+  placeOrder:
+    speakeasy-default-place-order:
+      requestBody:
+        application/json: {"complete": false}
+      responses:
+        "200":
+          application/xml: "0x45eC5A0D9E"
+          application/json: {"complete": false}
+  getOrderById:
+    speakeasy-default-get-order-by-id:
+      parameters:
+        path:
+          orderId: 728529
+      responses:
+        "200":
+          application/xml: "0xa91CABa7bf"
+          application/json: {"complete": false}
+  deleteOrder:
+    speakeasy-default-delete-order:
+      parameters:
+        path:
+          orderId: 690575
+  createUser:
+    speakeasy-default-create-user:
+      requestBody:
+        application/json: {}
+  createUsersWithArrayInput:
+    speakeasy-default-create-users-with-array-input:
+      requestBody:
+        application/json: []
+  createUsersWithListInput:
+    speakeasy-default-create-users-with-list-input:
+      requestBody:
+        application/json: [{}]
+  loginUser:
+    speakeasy-default-login-user:
+      parameters:
+        query:
+          username: "Lou12"
+          password: "0eXK37kzaSWlD1X"
+      responses:
+        "200":
+          application/xml: "<value>"
+          application/json: "<value>"
+  logoutUser: {}
+  getUserByName:
+    speakeasy-default-get-user-by-name:
+      parameters:
+        path:
+          username: "Edyth10"
+      responses:
+        "200":
+          application/xml: "0x4Fdf7986a7"
+          application/json: {}
+  updateUser:
+    speakeasy-default-update-user:
+      parameters:
+        path:
+          username: "Alison.Cassin"
+      requestBody:
+        application/json: {}
+  deleteUser:
+    speakeasy-default-delete-user:
+      parameters:
+        path:
+          username: "Rita_Schuppe"
+examplesVersion: 1.0.2
