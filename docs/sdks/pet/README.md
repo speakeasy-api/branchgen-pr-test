@@ -86,7 +86,7 @@ s = ::OpenApiSDK::SDK.new(
       ),
     )
 
-req = "{\"name\":\"doggie\",\"photoUrls\":[\"https://example.com/photo.png\"]}".encode()
+req = "{\"photoUrls\":[\"https://example.com/photo.png\"],\"name\":\"doggie\"}".encode()
 
 res = s.pet.add_pet_raw(request: req)
 
@@ -177,7 +177,7 @@ s = ::OpenApiSDK::SDK.new(
       ),
     )
 
-req = "{\"photoUrls\":[\"https://example.com/photo.png\"],\"name\":\"doggie\"}".encode()
+req = "{\"name\":\"doggie\",\"photoUrls\":[\"https://example.com/photo.png\"]}".encode()
 
 res = s.pet.update_pet_raw(request: req)
 
