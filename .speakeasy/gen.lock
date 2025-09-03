@@ -4,15 +4,15 @@ management:
   docChecksum: 466aeb8d5d7370f961415ada5875ca8d
   docVersion: 1.0.0
   speakeasyVersion: 0.0.1
-  generationVersion: 2.686.7
-  releaseVersion: 0.0.1
-  configChecksum: fde38997fba001ad1e1cc67d15af69cb
+  generationVersion: 2.674.1
+  releaseVersion: 0.0.2
+  configChecksum: ac52439c393298a5efd2da25ab4e9524
   repoURL: https://github.com/speakeasy-api/branchgen-pr-test.git
   installationURL: https://github.com/speakeasy-api/branchgen-pr-test
 features:
   ruby:
     constsAndDefaults: 0.1.1
-    core: 3.10.1
+    core: 3.10.0
     deprecations: 2.81.2
     flattening: 2.81.1
     globalSecurity: 2.81.8

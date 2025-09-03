@@ -177,7 +177,7 @@ s = ::OpenApiSDK::SDK.new(
       ),
     )
 
-req = "{\"photoUrls\":[\"https://example.com/photo.png\"],\"name\":\"doggie\"}".encode()
+req = "{\"name\":\"doggie\",\"photoUrls\":[\"https://example.com/photo.png\"]}".encode()
 
 res = s.pet.update_pet_raw(request: req)
 
