@@ -2,9 +2,6 @@ configVersion: 2.0.0
 generation:
   sdkClassName: SDK
   maintainOpenAPIOrder: true
-  usageSnippets:
-    optionalPropertyRendering: withExample
-    sdkInitStyle: constructor
   useClassNamesForArrayFields: true
   fixes:
     nameResolutionDec2023: true
