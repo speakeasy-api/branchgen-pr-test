@@ -2,6 +2,9 @@ configVersion: 2.0.0
 generation:
   sdkClassName: Openapi
   maintainOpenAPIOrder: true
+  usageSnippets:
+    optionalPropertyRendering: withExample
+    sdkInitStyle: constructor
   useClassNamesForArrayFields: true
   fixes:
     nameResolutionDec2023: true
@@ -19,12 +22,13 @@ generation:
     generateNewTests: true
     skipResponseBodyAssertions: false
 ruby:
-  version: 0.0.1
+  version: 0.0.2
   additionalDependencies:
     development: {}
     runtime: {}
   author: Speakeasy
   baseErrorName: OpenapiError
+  branchedGeneration: false
   clientServerStatusCodesAsErrors: true
   constFieldsAlwaysOptional: false
   defaultErrorName: APIError

@@ -3,14 +3,16 @@ id: ccf93aeb-c3f8-4f45-a2bd-b259f9c5f7e9
 management:
   docChecksum: 466aeb8d5d7370f961415ada5875ca8d
   docVersion: 1.0.0
-  speakeasyVersion: 1.606.0
-  generationVersion: 2.686.7
-  releaseVersion: 0.0.1
-  configChecksum: 41c3100f42abfc404fc049248937d713
+  speakeasyVersion: 0.0.1
+  generationVersion: 2.674.1
+  releaseVersion: 0.0.2
+  configChecksum: 52d49e97979468c8a423f1f9dd31edf1
+  repoURL: https://github.com/speakeasy-api/branchgen-pr-test.git
+  installationURL: https://github.com/speakeasy-api/branchgen-pr-test
 features:
   ruby:
     constsAndDefaults: 0.1.1
-    core: 3.10.1
+    core: 3.10.0
     deprecations: 2.81.2
     flattening: 2.81.1
     globalSecurity: 2.81.8
