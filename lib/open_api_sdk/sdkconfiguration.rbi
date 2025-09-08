@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 
 class OpenApiSDK::SDKConfiguration
   extend ::Crystalline::MetadataFields::ClassMethods
