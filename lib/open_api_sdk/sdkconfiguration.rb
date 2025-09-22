@@ -77,9 +77,9 @@ module OpenApiSDK
       end
       @language = 'ruby'
       @openapi_doc_version = '1.0.0'
-      @sdk_version = '0.0.5'
+      @sdk_version = '0.0.6'
       @gen_version = '2.674.1'
-      @user_agent = 'speakeasy-sdk/ruby 0.0.5 2.674.1 1.0.0 openapi'
+      @user_agent = 'speakeasy-sdk/ruby 0.0.6 2.674.1 1.0.0 openapi'
     end
 
     
