@@ -1,0 +1,25 @@
+name: Handle merges into main branch
+permissions:
+  checks: write
+  contents: write
+  pull-requests: write
+  statuses: write
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+env:
+  SPEAKEASY_CLI_LOCATION: /home/runner/work/branchgen-pr-test/branchgen-pr-test/bin/speakeasy
+  SPEAKEASY_ENVIRONMENT: local
+  INPUT_MODE: pr
+  INPUT_FORCE: true
+  SPEAKEASY_API_KEY: ${{secrets.SPEAKEASY_API_KEY}}
+
+jobs:
+  call-external-workflow:
+    uses: speakeasy-api/sdk-generation-action/.github/workflows/main-pr-merge-executor.yml@ian_docker_testing
+      
