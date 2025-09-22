@@ -23,7 +23,11 @@ module OpenApiSDK
       
     end
 
-    
+    def walk_all_pets()
+      puts "I'm walking my dog"
+    end
+
+
     def get_url(base_url:, url_variables: nil)
       sd_base_url, sd_options = @sdk_configuration.get_server_details
 
