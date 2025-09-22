@@ -5,8 +5,8 @@ management:
   docVersion: 1.0.0
   speakeasyVersion: 0.0.1
   generationVersion: 2.674.1
-  releaseVersion: 0.0.4
-  configChecksum: c0a39a1f8fed971462ef205c872a7e43
+  releaseVersion: 0.0.5
+  configChecksum: c67d81983ddd45ea2ecbc8da09f4b22a
   repoURL: https://github.com/speakeasy-api/branchgen-pr-test.git
   installationURL: https://github.com/speakeasy-api/branchgen-pr-test
 features:
