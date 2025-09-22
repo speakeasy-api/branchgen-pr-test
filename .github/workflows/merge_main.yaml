@@ -21,5 +21,5 @@ env:
 
 jobs:
   call-external-workflow:
-    uses: speakeasy-api/sdk-generation-action/.github/workflows/main-pr-merge-executor.yml@ian_docker_testing
+    uses: speakeasy-api/sdk-generation-action/.github/workflows/main-pr-merge-executor.yaml@ian_docker_testing
       
