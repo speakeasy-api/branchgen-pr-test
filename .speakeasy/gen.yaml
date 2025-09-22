@@ -22,12 +22,13 @@ generation:
     generateNewTests: true
     skipResponseBodyAssertions: false
 ruby:
-  version: 0.0.3
+  version: 0.0.4
   additionalDependencies:
     development: {}
     runtime: {}
   author: Speakeasy
   baseErrorName: OpenapiError
+  branchedGeneration: false
   clientServerStatusCodesAsErrors: true
   constFieldsAlwaysOptional: false
   defaultErrorName: APIError
