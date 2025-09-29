@@ -3,15 +3,17 @@ id: 37267b3b-21f9-4237-891a-b05feedd266a
 management:
   docChecksum: 466aeb8d5d7370f961415ada5875ca8d
   docVersion: 1.0.0
-  speakeasyVersion: 0.0.1
-  generationVersion: 2.711.1
-  releaseVersion: 0.0.5
-  configChecksum: 9fbda8d745bb0bc0b07af1fc331a6064
+  speakeasyVersion: 1.631.5
+  generationVersion: 2.716.16
+  releaseVersion: 0.0.6
+  configChecksum: 72bfa6353837256f1f16609e1a964b66
+  repoURL: https://github.com/speakeasy-api/branchgen-pr-test.git
+  installationURL: https://github.com/speakeasy-api/branchgen-pr-test
   customCodePatch: "diff --git a/lib/open_api_sdk/models/components/category.rb b/lib/open_api_sdk/models/components/category.rb\nindex 1d940f3..84e1c18 100644\n--- a/lib/open_api_sdk/models/components/category.rb\n+++ b/lib/open_api_sdk/models/components/category.rb\n@@ -24,7 +24,10 @@ module OpenApiSDK\n           @name = name\n         end\n \n-        \n+        def print\n+          @id.to_s\n+        end\n+\n         def ==(other)\n           return false unless other.is_a? self.class\n           return false unless @id == other.id\n"
 features:
   ruby:
     constsAndDefaults: 0.1.1
-    core: 3.10.2
+    core: 3.10.3
     deprecations: 2.81.2
     flattening: 2.81.1
     globalSecurity: 2.81.9
@@ -24,6 +26,7 @@ generatedFiles:
   - .gitattributes
   - .rubocop.yml
   - Gemfile
+  - Gemfile.lock
   - Rakefile
   - USAGE.md
   - docs/models/components/apiresponse.md
