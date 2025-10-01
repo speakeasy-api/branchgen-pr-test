@@ -5,8 +5,10 @@ management:
   docVersion: 1.0.0
   speakeasyVersion: 0.0.1
   generationVersion: 2.711.1
-  releaseVersion: 0.0.5
-  configChecksum: 9fbda8d745bb0bc0b07af1fc331a6064
+  releaseVersion: 0.0.6
+  configChecksum: 72bfa6353837256f1f16609e1a964b66
+  repoURL: https://github.com/speakeasy-api/branchgen-pr-test.git
+  installationURL: https://github.com/speakeasy-api/branchgen-pr-test
   customCodePatch: "diff --git a/lib/open_api_sdk/models/components/category.rb b/lib/open_api_sdk/models/components/category.rb\nindex 1d940f3..84e1c18 100644\n--- a/lib/open_api_sdk/models/components/category.rb\n+++ b/lib/open_api_sdk/models/components/category.rb\n@@ -24,7 +24,10 @@ module OpenApiSDK\n           @name = name\n         end\n \n-        \n+        def print\n+          @id.to_s\n+        end\n+\n         def ==(other)\n           return false unless other.is_a? self.class\n           return false unless @id == other.id\n"
 features:
   ruby:
