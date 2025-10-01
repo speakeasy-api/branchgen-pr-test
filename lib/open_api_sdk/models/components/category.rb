@@ -16,7 +16,11 @@ module OpenApiSDK
 
         field :id, Crystalline::Nilable.new(::Integer), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('id') } }
 
+<<<<<<< ours
+        field :name, Crystalline::Nilable.new(::Integer), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('name') } }
+=======
         field :name, Crystalline::Nilable.new(::Boolean), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('name') } }
+>>>>>>> theirs
 
         
         def initialize(id: nil, name: nil)
