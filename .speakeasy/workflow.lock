@@ -14,7 +14,7 @@ targets:
         sourceRevisionDigest: sha256:ee330f39d706e8e77512852cc851bab54fbc62107f175c1b290b9eb591978a0d
         sourceBlobDigest: sha256:545f4aba0d6efa3c2746f42428b1b7a9192454705843c3e67a57d575f773d371
         codeSamplesNamespace: swagger-petstore-ruby-code-samples
-        codeSamplesRevisionDigest: sha256:16e6e0974ecc19023a17808eeae029d2ff43fdee4400fadb07e77ebcf0c0890c
+        codeSamplesRevisionDigest: sha256:06588b1d8799011cd21a1fe421bd99cc29ac2e965fd423baabcedb7d43c41faf
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
