@@ -7,6 +7,7 @@ management:
   generationVersion: 2.711.1
   releaseVersion: 0.0.4
   configChecksum: 41939929cae65ebed345365012f81686
+  customCodePatch: "diff --git a/lib/open_api_sdk/models/components/category.rb b/lib/open_api_sdk/models/components/category.rb\nindex 1d940f3..4d8e96b 100644\n--- a/lib/open_api_sdk/models/components/category.rb\n+++ b/lib/open_api_sdk/models/components/category.rb\n@@ -24,6 +24,9 @@ module OpenApiSDK\n           @name = name\n         end\n \n+        def print\n+          @id.to_s\n+        end\n         \n         def ==(other)\n           return false unless other.is_a? self.class\n"
 features:
   ruby:
     constsAndDefaults: 0.1.1
