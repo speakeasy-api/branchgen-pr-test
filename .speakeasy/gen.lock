@@ -7,8 +7,8 @@ management:
   generationVersion: 2.711.1
   releaseVersion: 0.0.4
   configChecksum: 41939929cae65ebed345365012f81686
-  customCodeCommitHash: 0fb6fffaa8ea82952375ad799821319e1ddaf73f
-  customCodePatch: "diff --git a/lib/open_api_sdk/models/components/category.rb b/lib/open_api_sdk/models/components/category.rb\nindex 1d940f3..4d8e96b 100644\n--- a/lib/open_api_sdk/models/components/category.rb\n+++ b/lib/open_api_sdk/models/components/category.rb\n@@ -24,6 +24,9 @@ module OpenApiSDK\n           @name = name\n         end\n \n+        def print\n+          @id.to_s\n+        end\n         \n         def ==(other)\n           return false unless other.is_a? self.class\n"
+  customCodeCommitHash: 63ee0547ebcfcd6d71d8bb3f8172596524064dea
+  customCodePatch: "diff --git a/lib/open_api_sdk/models/components/category.rb b/lib/open_api_sdk/models/components/category.rb\nindex 1d940f3..bbc0459 100644\n--- a/lib/open_api_sdk/models/components/category.rb\n+++ b/lib/open_api_sdk/models/components/category.rb\n@@ -16,7 +16,7 @@ module OpenApiSDK\n \n         field :id, Crystalline::Nilable.new(::Integer), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('id') } }\n \n-        field :name, Crystalline::Nilable.new(::String), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('name') } }\n+        field :name, Crystalline::Nilable.new(::Boolean), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('name') } }\n \n         \n         def initialize(id: nil, name: nil)\n@@ -24,6 +24,9 @@ module OpenApiSDK\n           @name = name\n         end\n \n+        def print\n+          @id.to_s\n+        end\n         \n         def ==(other)\n           return false unless other.is_a? self.class\n"
 features:
   ruby:
     constsAndDefaults: 0.1.1
