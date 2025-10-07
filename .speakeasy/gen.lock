@@ -1,12 +1,14 @@
 lockVersion: 2.0.0
 id: 37267b3b-21f9-4237-891a-b05feedd266a
 management:
-  docChecksum: 466aeb8d5d7370f961415ada5875ca8d
+  docChecksum: 9a40078fdbff42593c0f78181a1d4da6
   docVersion: 1.0.0
   speakeasyVersion: 0.0.1
   generationVersion: 2.711.1
-  releaseVersion: 0.0.4
-  configChecksum: 41939929cae65ebed345365012f81686
+  releaseVersion: 0.0.5
+  configChecksum: 9fbda8d745bb0bc0b07af1fc331a6064
+  repoURL: https://github.com/speakeasy-api/branchgen-pr-test.git
+  installationURL: https://github.com/speakeasy-api/branchgen-pr-test
   customCodeCommitHash: 0163e9690d14e016841532b710444ea796c2b0e6
   customCodePatch: "diff --git a/lib/open_api_sdk/models/components/category.rb b/lib/open_api_sdk/models/components/category.rb\nindex 1d940f3..bbc0459 100644\n--- a/lib/open_api_sdk/models/components/category.rb\n+++ b/lib/open_api_sdk/models/components/category.rb\n@@ -16,7 +16,7 @@ module OpenApiSDK\n \n         field :id, Crystalline::Nilable.new(::Integer), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('id') } }\n \n-        field :name, Crystalline::Nilable.new(::String), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('name') } }\n+        field :name, Crystalline::Nilable.new(::Boolean), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('name') } }\n \n         \n         def initialize(id: nil, name: nil)\n@@ -24,6 +24,9 @@ module OpenApiSDK\n           @name = name\n         end\n \n+        def print\n+          @id.to_s\n+        end\n         \n         def ==(other)\n           return false unless other.is_a? self.class\n"
 features:
