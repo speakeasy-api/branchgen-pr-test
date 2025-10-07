@@ -24,6 +24,9 @@ module OpenApiSDK
           @name = name
         end
 
+        def print
+          @id.to_s
+        end
         
         def ==(other)
           return false unless other.is_a? self.class
