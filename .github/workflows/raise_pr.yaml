@@ -77,7 +77,7 @@ jobs:
           # Clone the repository with your changes
           git clone https://github.com/speakeasy-api/sdk-generation-action.git /tmp/sdk-action
           cd /tmp/sdk-action
-          git checkout ian_docker_testing_2
+          git checkout ian_docker_testing_3
           
           # Build the Docker image
           docker build -t custom-sdk-action .
