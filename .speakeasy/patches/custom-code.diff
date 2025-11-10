@@ -1,0 +1,13 @@
+diff --git a/lib/open_api_sdk/models/components/category.rb b/lib/open_api_sdk/models/components/category.rb
+index 1d940f3..57be14f 100644
+--- a/lib/open_api_sdk/models/components/category.rb
++++ b/lib/open_api_sdk/models/components/category.rb
+@@ -14,7 +14,7 @@ module OpenApiSDK
+         include Crystalline::MetadataFields
+ 
+ 
+-        field :id, Crystalline::Nilable.new(::Integer), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('id') } }
++        field :id, Crystalline::Nilable.new(::Boolean), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('id') } }
+ 
+         field :name, Crystalline::Nilable.new(::String), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('name') } }
+ 
