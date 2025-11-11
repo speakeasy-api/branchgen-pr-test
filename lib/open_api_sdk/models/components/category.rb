@@ -14,7 +14,7 @@ module OpenApiSDK
         include Crystalline::MetadataFields
 
 
-        field :id, Crystalline::Nilable.new(::String), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('id') } }
+        field :id, Crystalline::Nilable.new(::Boolean), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('id') } }
 
         field :name, Crystalline::Nilable.new(::String), { 'format_json': { 'letter_case': ::OpenApiSDK::Utils.field_name('name') } }
 
