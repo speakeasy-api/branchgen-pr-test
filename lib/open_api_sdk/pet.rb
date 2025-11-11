@@ -72,7 +72,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'addPet',
         security_source: @sdk_configuration.security_source
       )
@@ -178,7 +178,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'addPet_raw',
         security_source: @sdk_configuration.security_source
       )
@@ -284,7 +284,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'updatePet',
         security_source: @sdk_configuration.security_source
       )
@@ -390,7 +390,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'updatePet_raw',
         security_source: @sdk_configuration.security_source
       )
@@ -490,7 +490,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'findPetsByStatus',
         security_source: @sdk_configuration.security_source
       )
@@ -616,7 +616,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'findPetsByTags',
         security_source: @sdk_configuration.security_source
       )
@@ -888,7 +888,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'updatePetWithForm',
         security_source: @sdk_configuration.security_source
       )
@@ -992,7 +992,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'deletePet',
         security_source: @sdk_configuration.security_source
       )
@@ -1105,7 +1105,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'uploadFile',
         security_source: @sdk_configuration.security_source
       )

@@ -45,7 +45,7 @@ The SDK can be installed using [RubyGems](https://rubygems.org/):
 
 ```bash
 gem install specific_install
-gem specific_install  
+gem specific_install https://github.com/speakeasy-api/branchgen-pr-test 
 ```
 <!-- End SDK Installation [installation] -->
 
@@ -138,7 +138,6 @@ end
 
 <details open>
 <summary>Available methods</summary>
-
 
 ### [pet](docs/sdks/pet/README.md)
 
