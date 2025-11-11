@@ -1,22 +1,22 @@
 lockVersion: 2.0.0
 id: 37267b3b-21f9-4237-891a-b05feedd266a
 management:
-  docChecksum: 466aeb8d5d7370f961415ada5875ca8d
+  docChecksum: f089cca56437909e6ad80e1c65b4add3
   docVersion: 1.0.0
   speakeasyVersion: 0.0.1
-  generationVersion: 2.711.1
-  releaseVersion: 0.0.4
-  configChecksum: 41939929cae65ebed345365012f81686
+  generationVersion: 2.742.1
+  releaseVersion: 0.1.0
+  configChecksum: 47e070897b9b85fe8ea73ac6fb39adce
   customCodeCommitHash: a3ac39bdea2bf74d9aef492043b71423f2087ac9
 features:
   ruby:
     constsAndDefaults: 0.1.1
-    core: 3.10.2
+    core: 3.11.2
     deprecations: 2.81.2
     flattening: 2.81.1
     globalSecurity: 2.81.9
     globalSecurityFlattening: 0.1.0
-    globalServerURLs: 2.82.4
+    globalServerURLs: 2.83.0
     inputOutputModels: 2.83.0
     methodSecurity: 2.82.2
     responseFormat: 0.1.0
@@ -76,7 +76,6 @@ generatedFiles:
   - docs/models/operations/uploadfilerequest.md
   - docs/models/operations/uploadfilerequestbody.md
   - docs/models/operations/uploadfileresponse.md
-  - docs/sdks/openapi/README.md
   - docs/sdks/pet/README.md
   - docs/sdks/store/README.md
   - docs/sdks/user/README.md

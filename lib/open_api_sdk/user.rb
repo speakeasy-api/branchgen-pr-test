@@ -73,7 +73,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'createUser',
         security_source: @sdk_configuration.security_source
       )
@@ -176,7 +176,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'createUsersWithArrayInput',
         security_source: @sdk_configuration.security_source
       )
@@ -279,7 +279,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'createUsersWithListInput',
         security_source: @sdk_configuration.security_source
       )
@@ -376,7 +376,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'loginUser',
         security_source: @sdk_configuration.security_source
       )
@@ -497,7 +497,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'logoutUser',
         security_source: @sdk_configuration.security_source
       )
@@ -596,7 +596,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'getUserByName',
         security_source: @sdk_configuration.security_source
       )
@@ -735,7 +735,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'updateUser',
         security_source: @sdk_configuration.security_source
       )
@@ -839,7 +839,7 @@ module OpenApiSDK
       hook_ctx = SDKHooks::HookContext.new(
         config: @sdk_configuration,
         base_url: base_url,
-        oauth2_scopes: [],
+        oauth2_scopes: nil,
         operation_id: 'deleteUser',
         security_source: @sdk_configuration.security_source
       )

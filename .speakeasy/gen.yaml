@@ -18,12 +18,15 @@ generation:
     oAuth2PasswordEnabled: false
     hoistGlobalSecurity: true
   sdkHooksConfigAccess: true
+  schemas:
+    allOfMergeStrategy: shallowMerge
+  requestBodyFieldName: ""
   tests:
     generateTests: false
     generateNewTests: true
     skipResponseBodyAssertions: false
 ruby:
-  version: 0.0.4
+  version: 0.1.0
   additionalDependencies:
     development: {}
     runtime: {}

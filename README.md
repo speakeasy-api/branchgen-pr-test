@@ -139,7 +139,6 @@ end
 <details open>
 <summary>Available methods</summary>
 
-
 ### [pet](docs/sdks/pet/README.md)
 
 * [add_pet](docs/sdks/pet/README.md#add_pet) - Add a new pet to the store
