@@ -113,7 +113,7 @@ jobs:
             -e INPUT_MODE=pr \
             -e INPUT_FORCE=true \
             -e INPUT_DEBUG=true \
-            -e INPUT_BASE_BRANCH=${{github.event.inputs.target_branch}}
+            -e INPUT_BASE_BRANCH=${{github.event.inputs.target_branch}} \
             -e TARGET=overlay-example \
             -e GITHUB_RUN_ID="${{ github.run_id }}" \
             -e GITHUB_RUN_ATTEMPT="${{ github.run_attempt }}" \
